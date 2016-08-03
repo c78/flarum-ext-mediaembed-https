@@ -43,7 +43,9 @@ function subscribe(Dispatcher $events)
                        "!qq\\.com/x/cover/\\w+/(?'id'\\w+)\\.html!",
                        "!qq\\.com/x/cover/\\w+\\.html\\?vid=(?'id'\\w+)!",
                        "!qq\\.com/cover/[^/]+/\\w+/(?'id'\\w+)\\.html!",
-                       "!qq\\.com/cover/[^/]+/\\w+\\.html\\?vid=(?'id'\\w+)!"
+                       "!qq\\.com/cover/[^/]+/\\w+\\.html\\?vid=(?'id'\\w+)!",
+                       "!qq\\.com/x/page/(?'id'\\w+)\\.html!",
+                       "!qq\\.com/page/[^/]+/[^/]+/[^/]+/(?'id'\\w+)\\.html!"
                     ],
                     'iframe'  => [
                         'width'  => 760,

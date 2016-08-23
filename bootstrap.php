@@ -27,7 +27,10 @@ function subscribe(Dispatcher $events)
                 'bilibili',
                 [   
                     'host'    => 'www.bilibili.com',
-                    'extract' => "!www.bilibili.com/video/av(?'id'\\d+)/!",
+                    'extract' => [
+                        "!www.bilibili.com/video/av(?'id'\\d+)/!",
+                        "!www.bilibili.com/mobile/video/av(?'id'\\d+)\\.html!"
+                    ],
                     'flash'  => [
                         'width'  => 760,
                         'height' => 450,
